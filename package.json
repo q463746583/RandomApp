@@ -5,15 +5,19 @@
   "author": "Cvanzy",
   "license": "MIT",
   "scripts": {
-    "build" : "webpack",
-    "server" : "live-server public",
-    "build-babel" : "babel src/app.js --out-file=public/scripts/app.js --presets=env,react"
+    "build": "webpack --watch",
+    "server": "live-server public",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "eslint": "^5.9.0",
     "global": "^4.3.2",
-    "webpack": "^4.27.0"
+    "webpack": "^4.27.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
   }
 }
